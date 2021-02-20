@@ -10,7 +10,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/
 
 # production
 /build
@@ -73,7 +73,7 @@ _book
 # IntelliJ project files
 .idea
 *.iml
-out
+# out
 gen
 ### PureScript template
 # Dependencies
@@ -167,7 +167,7 @@ web_modules/
 
 # Next.js build output
 .next
-out
+# out
 
 # Nuxt.js build / generate output
 .nuxt
@@ -254,7 +254,7 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-out/
+# out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
