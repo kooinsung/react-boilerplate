@@ -11,7 +11,8 @@
     "start": "next start",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "eslint --ext js,jsx,ts,tsx --fix",
-    "prettier": "prettier --write \"**/*.{js,json,ts,tsx}\""
+    "prettier": "prettier --write \"**/*.{js,json,ts,tsx}\"",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "next": "latest",
